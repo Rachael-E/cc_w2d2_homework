@@ -26,7 +26,21 @@ class Bear
       @stomach << unlucky_fish
     end
   end
-  
+
+  # def hunt_many_fish(river_name, swimming_fish)
+  #
+  #   if river_name.fish_content != 0
+  #     #push fish into stomach
+  #     unlucky_fishes = river_name.fish_content.shift
+  #     @stomach << unlucky_fishes
+  #
+  #   end
+  # end
+
+  def bear_digests()
+    @stomach.empty?()
+  end
+
 
 
 end

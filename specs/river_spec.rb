@@ -21,7 +21,10 @@ class RiverTest < Minitest::Test
   #   assert_equal(19, @river_with_fish.fish_content)
   # end
 
-
+  def test_a_fish_is_born
+    @river_with_fish.new_fish("Tadpole")
+    assert_equal(4, @river_with_fish.fish_in_river)
+  end
 
 
 

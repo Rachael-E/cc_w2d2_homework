@@ -33,5 +33,20 @@ class BearTest < Minitest::Test
 
   end
 
+  def test_bear_digest
+    @bear.bear_digests()
+    assert_equal(0, @bear.bear_hunger)
+
+  end
+
+  # def test_hunt_many_fish
+  #   @bear.hunt_many_fish(@river, @river.fish_in_river)
+  #   assert_equal(2, @river.fish_in_river)
+  #   assert_equal(3, @bear.stomach.length)
+  #
+  # end
+
+
+
 
 end

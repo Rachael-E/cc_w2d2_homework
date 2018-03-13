@@ -11,9 +11,13 @@ class River
   def fish_in_river
     return fish_content.length
   end
-  # 
+  #
   # def remove_fish(chosen_fish)
   #   @fish_content -= chosen_fish
   # end
+
+  def new_fish(fish_type)
+    fish_content << fish_type
+  end
 
 end
